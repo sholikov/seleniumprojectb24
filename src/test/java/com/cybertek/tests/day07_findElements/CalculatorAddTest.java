@@ -48,6 +48,6 @@ public class CalculatorAddTest {
             System.out.println("Fail: calculation mismatch");
         }
 
-       driver.quit();
+    //   driver.quit();
     }
 }

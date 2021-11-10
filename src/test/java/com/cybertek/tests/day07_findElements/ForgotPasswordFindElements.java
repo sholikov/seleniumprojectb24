@@ -13,7 +13,7 @@ public class ForgotPasswordFindElements {
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.get(appUrl);
-// locate all the links and store into list of webelements
+        // locate all the links and store into list of webelements
         List<WebElement> links = driver.findElements(By.tagName("a"));
 
         // print count of link

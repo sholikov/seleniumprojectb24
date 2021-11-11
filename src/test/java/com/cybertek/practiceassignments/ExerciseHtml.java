@@ -23,12 +23,12 @@ public class ExerciseHtml {
 
 
         for(int i=0;i< links.size();i++){
-            if(links.get(i).getAttribute("href")==null){
+            if(links.get(i).getAttribute("href")!=null){
                 brokenLinks.add(links.get(i));
             }
         }
 
-
+        System.out.println(brokenLinks);
         System.out.println("Broken links = " + brokenLinks.size());
     }
 }

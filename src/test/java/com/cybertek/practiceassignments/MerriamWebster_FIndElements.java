@@ -22,13 +22,13 @@ public class MerriamWebster_FIndElements {
         int hasText = 0;
 
         for (WebElement allLink : allLinks) {
-            if (!allLink.getText().isEmpty()) {
+            if (allLink.getText().isEmpty()) {
                 missingText++;
             } else {
                 hasText++;
             }
 
         }
-        System.out.println(missingText + " are missing text \n"  + hasText + " have texts \n"  "There are total of " + allLinks);
+        System.out.println(missingText + " links are missing text \n"  + hasText + " links have texts \nThere are total of " + allLinks.size() + " links");
     }
 }

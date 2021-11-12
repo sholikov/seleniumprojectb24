@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class GasMileageCalculatorTest {
      public static void main(String []args) throws InterruptedException {
          String url  = "https://www.calculator.net";
@@ -27,15 +29,16 @@ public class GasMileageCalculatorTest {
 
         // Locate, clear and type “7925” into “Current odometer” field
 
-/*
+
          List<WebElement> inputFields = driver.findElements(By.cssSelector("input[type='text'"));
+  /*       String [] numbers ={ "7925","7550","16","3.55"};
+         for (int i=; i<4; i++) {
+             inputField.get(i).clear();
+             inputField.get(i).sendKeys(numbers[i]);
 
-         for (WebElement inputField : inputFields) {
-             inputField.clear();
          }
-         */
-
-       //  Thread.sleep(1234);
+   */
+         Thread.sleep(1234);
          WebElement curOdField = driver.findElement(By.id("uscodreading"));
          curOdField.clear();
          curOdField.sendKeys("7925");

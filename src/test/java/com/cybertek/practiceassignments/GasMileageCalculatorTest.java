@@ -61,7 +61,7 @@ public class GasMileageCalculatorTest {
          WebElement result = driver.findElement(By.tagName("h2"));
          String calResult = result.getText();
          System.out.println(calResult);
-         String digits = driver.findElement(By.xpath("//b[.='23.44 mpg']")).getText();
+         String digits = driver.findElement(By.xpath("//b[contains(text(),'mpg')]")).getText();
          System.out.println(digits);
 
 

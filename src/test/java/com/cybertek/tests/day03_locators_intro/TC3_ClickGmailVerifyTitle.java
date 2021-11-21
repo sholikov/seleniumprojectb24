@@ -43,7 +43,9 @@ public class TC3_ClickGmailVerifyTitle {
             System.out.println("FAIL: Title verification failed");
         }
 
-        driver.quit();
+        driver.close();
+
+
 
 
 

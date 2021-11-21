@@ -9,9 +9,9 @@ import org.openqa.selenium.WebElement;
 public class Polymer {
     /*
    Here is this week's task:
-Write a basic browser automation framework to validate a Polymer website.
-The focus should be on the interaction with the browser.
-The Web Application under test http://todomvc.com/
+    Write a basic browser automation framework to validate a Polymer website.
+    The focus should be on the interaction with the browser.
+    The Web Application under test http://todomvc.com/
    The first step should be to load the website,
    click within the JavaScript tab,
    and select the Polymer link.

@@ -28,5 +28,10 @@ public class SeleniumTest {
         // will close web browser
         driver.close();
 
+
+
+
+
+
     }
 }

@@ -14,7 +14,7 @@ public class RegistrationFormInputFields {
         driver.manage().window().maximize();
         driver.get(appUrl);
 
-        List<WebElement>inputFields = driver.findElements(By.cssSelector("input[type='text'"));
+        List<WebElement>inputFields = driver.findElements(By.cssSelector("input[type='text']"));
         System.out.println(inputFields.size());
 
         //        for (WebElement input : inputFields) {

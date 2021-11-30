@@ -1,4 +1,4 @@
-package com.cybertek.tests.day_10Dropdown_alerts_iframes_windows;
+package com.cybertek.tests.day10_dropdown_alerts_iframes_windows;
 
 import com.cybertek.utils.WebDriverFactory;
 import org.openqa.selenium.By;
@@ -27,8 +27,8 @@ public class CarGurusUserCarSearchTest {
 
     @AfterClass
     public void tearDown(){
-        driver.quit();
-    }
+       driver.quit();
+}
 
     @Test
     public void searchForMinivanTest(){

@@ -1,4 +1,4 @@
-package com.cybertek.tests.day_10Dropdown_alerts_iframes_windows;
+package com.cybertek.tests.day10_dropdown_alerts_iframes_windows;
 
 import com.cybertek.utils.WebDriverFactory;
 import org.openqa.selenium.By;
@@ -8,10 +8,12 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import static org.testng.Assert.*;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class AmazonDepartmentNamesListTest {
 

@@ -5,6 +5,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -73,8 +74,17 @@ public class TotalOrderPriceCalculation2 {
         Thread.sleep(1234);
         System.out.println("ActualTotal = " + total.getText());
 
-        WebElement itemOne = driver.findElement(By.xpath("//tbody[@id='tbodyid']//td[contains(.,790)])"));
-        System.out.println(itemOne.getText());
+        WebElement itemOne = driver.findElement(By.xpath("//tbody/tr[1]/td[3]"));
+       // WebElement itemOne = driver.findElement(By.xpath("//tbody/tr[1]/td[.='790']"));
+        Thread.sleep(1234);
+        System.out.println("The first item's price = " + itemOne.getText());
+        WebElement itemTwo = driver.findElement(By.xpath("//tr[2]/td[3]"));
+        //WebElement itemTwo = driver.findElement(By.xpath("//tr[2]/td[.='790']"));
+        Thread.sleep(1234);
+        System.out.println("The second item's price = " + itemTwo.getText());
+        int expectedTotal = Integer.parseInt(itemOne.getText()) + Integer.parseInt(itemTwo.getText());
+
+        Assert.assertEquals(Integer.parseInt(total.getText()),expectedTotal);
 
 
     }

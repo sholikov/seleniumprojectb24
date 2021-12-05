@@ -17,4 +17,14 @@ public class SmartBearUtils {
 
         Assert.assertEquals(driver.getTitle() , "Web Orders", "Failed to login to smartbear app");
     }
+
+    public static void addProduct(WebDriver driver){
+        /**
+         * TODO: add selenium steps adding item to an order
+         */
+
+
+
+
+    }
 }
